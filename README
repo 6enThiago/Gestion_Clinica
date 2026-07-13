@@ -1,7 +1,6 @@
 # Clínica Salud Integral - Sistema de Gestión
 
 Sistema web para la gestión administrativa de una clínica: permite registrar, consultar y editar pacientes y médicos, además de visualizar un dashboard con estadísticas generales.
-
 ## Tecnologías utilizadas
 
 - Python 3
@@ -21,20 +20,15 @@ Sistema web para la gestión administrativa de una clínica: permite registrar, 
 
 ## Estructura del proyecto
 
-```
 clinica-salud-integral/
+
 Codigo.py              # Rutas y lógica principal de Flask
 
 Inicio.py              # Conexión a la base de datos
 
 Base_Datos.sql         # Script de creación de la base de datos
 
-requirements.txt       # Dependencias del proyecto
-
-.env.example           # Ejemplo de variables de entorno
-
 .gitignore
-
 ├── templates/
 │   ├── menu.html
 │   ├── paciente.html
@@ -48,6 +42,7 @@ requirements.txt       # Dependencias del proyecto
     ├── paciente.css
     ├── medico.css
     └── lista.css
+
 
 ## Requisitos previos
 
@@ -93,7 +88,9 @@ python Codigo.py
 
 Con el servidor corriendo, accedé desde el navegador a:
 
+```
 http://localhost:5000
+```
 
 ### Rutas principales
 
@@ -127,4 +124,4 @@ Este proyecto está bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 
 ## Autor
 
-Desarrollado por **[Tu Nombre]** — [Gamerflor@gmail.com] — [github.com/6enThiago](https://github.com/6enThiago)
+Desarrollado por **[Thiago]** — [Gamerflor@gmail.com] — [github.com/6enThiago](https://github.com/6enThiago)
