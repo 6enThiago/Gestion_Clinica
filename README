@@ -48,49 +48,46 @@ Base_Datos.sql         # Script de creación de la base de datos
 
 - Python 3.9 o superior
 - MySQL Server instalado y corriendo
-- pip
+- pip (instalacion de las librerias necesarias para la pagina web): "pip install Flask" "pip install mysql-connector-python"
 
 ## Instalación
 
 1. Cloná el repositorio
-```bash
+
 git clone https://github.com/tu-usuario/clinica-salud-integral.git
 cd clinica-salud-integral
-```
 
 2. Creá un entorno virtual (opcional pero recomendado)
-```bash
+
 python -m venv venv
 source venv/bin/activate      # En Windows: venv\Scripts\activate
-```
 
 3. Instalá las dependencias
-```bash
+
 pip install -r requirements.txt
-```
 
 4. Configurá la base de datos
+
 - Abrí MySQL y ejecutá el script `Base_Datos.sql`.
 - Esto crea la base `salud_integral` con las tablas `pacientes` y `medicos`, junto con datos de prueba.
 
 5. Configurá las variables de entorno
-```bash
+
 cp .env.example .env
-```
+
 - Completá el archivo `.env` con tus credenciales de MySQL (usuario, contraseña, host).
 
 6. Ejecutá la aplicación
-```bash
-python Codigo.py
-```
+
+"python Codigo.py" desde la terminal de Visual Studio Code
 
 ## Uso
 
 Con el servidor corriendo, accedé desde el navegador a:
 
-```
 http://localhost:5000
-```
+
+(El puerto se lo puede modificar a gustos propios si son necesarios)
 
 ### Rutas principales
 
@@ -117,11 +114,3 @@ http://localhost:5000
 - [ ] Sistema de login y roles de usuario (administración / recepción)
 - [ ] Historial de turnos y citas médicas
 - [ ] Exportar historia clínica a PDF
-
-## Licencia
-
-Este proyecto está bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
-
-## Autor
-
-Desarrollado por **[Thiago]** — [Gamerflor@gmail.com] — [github.com/6enThiago](https://github.com/6enThiago)
